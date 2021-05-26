@@ -20,7 +20,7 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push isjustintime/simple-node
+  - docker push lmarten/simple-node
 
 #deploy:
 #  provider: script
